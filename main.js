@@ -1,4 +1,5 @@
 let a = 27;
+let b = 2;
 let c = 8;
 let d = 4;
 
@@ -58,6 +59,12 @@ c **= d;
 console.log(`\nOperador de exponencación\n`);
 console.log(`Para el operador de exponenciación el resultado es es ${c} y su tipo de datos es`, typeof(c));   
 
+//Prueba función para usar las mismas variables inicializadas una unica vez
+function potencia(a,b) {
+    return a **= b;
+}
+
+console.log(`Funcion Potencia ${potencia(d,b)}`);
 
 
 
